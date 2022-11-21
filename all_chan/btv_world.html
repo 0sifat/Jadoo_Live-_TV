@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <meta charset=utf-8 />
+    <title>Your title</title>
+      
+    
+      <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+      <script src="https://unpkg.com/video.js/dist/video.js"></script>
+      <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+       
+    </head>
+    <body>
+      
+        <video-js id=example-video width=1330 height=600 class="vjs-default-skin" controls>
+            <source
+               src="http://172.31.29.106/allLive/btv_world/playlist.m3u8"
+               type="application/x-mpegURL">
+          </video-js>
+          <script src="video.js"></script>
+          <script src="videojs-http-streaming.js"></script>
+          <script>
+          var player = videojs('example-video');
+          player.play();
+          </script>
+
+      
+    </body>
+    </html>
+
+
